@@ -13,9 +13,17 @@ public class HelloController {
     private TextField input;
 
     @FXML
-    ObservableList<String> items = FXCollections.observableArrayList();
-    private ListView<String> list = new ListView<>(items);
+    ObservableList<String> itemsOne = FXCollections.observableArrayList();
+    private ListView<String> listOne = new ListView<>(itemsOne);
 
+    ObservableList<String> itemsTwo = FXCollections.observableArrayList();
+    private ListView<String> listTwo = new ListView<>(itemsTwo);
+
+
+    @FXML
+    protected void Initialize(){
+
+    }
 
     @FXML
     protected boolean checkAvailable(){
